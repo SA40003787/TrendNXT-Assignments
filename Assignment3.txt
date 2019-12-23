@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3 - TrendNXTHTML5L1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            svg { width: 50%; }
+            h1 {
+                font-family: 'Century Gothic', 'Arial Narrow', Arial, sans-serif;
+                color: #ffa500;
+                font-size: 6vw;
+                margin-top: 0;
+            }
+            #sectionA, #sectionB {
+                margin: 0 auto;
+                text-align: center;
+            }
+            video {
+                display: block;
+                margin: 20px auto;
+                width: 100%;
+                max-width: 480px;
+            }
+            button {
+                background: #ffa500;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 15px;
+                border-radius: 8px;
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="sectionA" class="logo">
+            <img src="AOV_Logo.jpg" alt="Awesome Online Videos Logo">
+            <h1>Awesome Online Videos</h1>
+        </div>
+
+        <div id="sectionB" class="video">
+            <video id="video" width="480">
+                <source src="Dolphin.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button onclick="play()">Play Video</button>
+            <button onclick="pause()">Pause Video</button>
+        </div>
+    </body>
+
+    <script>
+        var video = document.getElementById('video');
+        function play() {
+            video.play();
+        }
+        function pause() {
+            video.pause();
+        }
+    </script>
+</html>
